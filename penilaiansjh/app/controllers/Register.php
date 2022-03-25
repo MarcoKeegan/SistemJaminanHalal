@@ -69,7 +69,7 @@ class Register extends Controller {
             } elseif (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
                 $data['emailError'] = 'Please enter the correct format.';
             } else {
-                //Check if email exists.               !!!!!BLM JALAN!!!!!!!
+                //Check if email exists.               (BLM JALAN!!!)
                 if ($this->userModel->findUserByEmail($data['email'])) {
                     $data['emailError'] = 'Email is already taken.';
                 }
@@ -104,9 +104,9 @@ class Register extends Controller {
                     //Redirect to the login page
                     header('Location: ' . BASEURL . '/login');
                 } 
-                // else {
-                //     die('Something went wrong.');            //Kalo dinyalain keluar something went wrong
-                // }
+                else {
+                    die('Something went wrong.');            //Kalo dinyalain keluar something went wrong
+                }
             }
         }
 

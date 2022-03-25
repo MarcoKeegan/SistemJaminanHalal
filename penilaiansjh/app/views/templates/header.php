@@ -49,7 +49,7 @@
      </li>
    <li class="btn-login">
       <?php if(isset($_SESSION['user_id'])) :  ?>
-        <a class="nav-link" href="<?= BASEURL; ?>/login">Logout</a>
+        <a class="nav-link" href="<?= BASEURL; ?>/login/logout">Logout</a>
       <?php else : ?>
         <a class="nav-link" href="<?= BASEURL; ?>/login">Login</a>
       <?php endif; ?>

@@ -40,12 +40,12 @@ class Login extends Controller {
                 'usernameError' => '',
                 'passwordError' => '',
             ];
-            //Validate username
+            //Validate username             (JALAN)
             if (empty($data['username'])) {
                 $data['usernameError'] = 'Please enter a username.';
             }
 
-            //Validate password
+            //Validate password             (JALAN)
             if (empty($data['password'])) {
                 $data['passwordError'] = 'Please enter a password.';
             }
